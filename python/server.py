@@ -1,5 +1,7 @@
 from flask import Flask, request, redirect
+from flask_cors import CORS
 app = Flask(__name__)
+CORS(app)
 from threekingdoms.generals import generals 
 from threekingdoms.skills import skills 
 
