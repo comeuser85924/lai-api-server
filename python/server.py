@@ -5,7 +5,7 @@ CORS(app)
 from threekingdoms.generals import generals 
 from threekingdoms.skills import skills 
 
-# googleSheepKey = os.environ['google_sheet_key']
+googleSheepKey = os.environ['google_sheet_key']
 @app.route("/threekingdoms/generals", methods=['GET'])
 def threekingdomsGenerals():
     return generals(googleSheepKey)
