@@ -8,7 +8,6 @@ app = Flask(__name__)
 CORS(app)
 
 googleSheepKey = os.environ['google_sheet_key']
-
 @app.route("/threekingdoms/generals", methods=['GET'])
 def threekingdomsGenerals():
     return generals(googleSheepKey)
